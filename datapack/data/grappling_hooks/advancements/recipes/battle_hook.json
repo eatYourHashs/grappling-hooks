@@ -1,0 +1,15 @@
+{
+  "parent": "grappling_hooks:recipes/root",
+  "rewards": {
+    "function": "grappling_hooks:entity/player/nbt_recipe",
+    "loot": ["grappling_hooks:items/battle_hook"]
+  },
+  "criteria": {
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "grappling_hooks:battle_hook"
+      }
+    }
+  }
+}

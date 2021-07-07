@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Right click to launch the hook.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Once hook is stuck, release to grapple!",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Switch off this item or release early to reel without grappling.",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Grappling Hook",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:2,CustomModelData:425000,gh_id:\"grappling_hook\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

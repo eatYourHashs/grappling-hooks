@@ -1,0 +1,19 @@
+{
+	"display": {
+			"title": "Grappling Hooks",
+			"description": "Adds a useful grappling hook.",
+			"icon": {
+				"item": "minecraft:warped_fungus_on_a_stick",
+				"nbt": "{CustomModelData:425000}"
+			},
+			"announce_to_chat": false,
+			"show_toast": false
+	},
+	"parent": "global:hashs",
+	"criteria": {
+			"trigger": {
+					"trigger": "minecraft:tick"
+			}
+	
+	}
+}

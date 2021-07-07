@@ -1,0 +1,14 @@
+{
+    "parent": "item/handheld_rod",
+    "textures": {
+        "layer0": "item/warped_fungus_on_a_stick"
+    },
+    "overrides": [
+        {
+            "predicate": {"custom_model_data": 425000}, "model": "grappling_hooks:items/grappling_hook"
+        },
+        {
+            "predicate": {"custom_model_data": 425001}, "model": "grappling_hooks:items/battle_hook"
+        }
+    ]
+}
