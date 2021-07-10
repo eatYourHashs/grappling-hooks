@@ -39,7 +39,6 @@
     "minecraft:experience_orb",
     "minecraft:boat",
     "minecraft:ender_dragon",
-    "minecraft:wither",
-    "minecraft:player"
+    "minecraft:wither"
   ]
 }
