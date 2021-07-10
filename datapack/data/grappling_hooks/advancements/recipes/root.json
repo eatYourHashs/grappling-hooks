@@ -1,12 +1,53 @@
 {
   "criteria": {
-    "impossible": {
-      "trigger": "minecraft:impossible"
+    "grappling_hook": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "gh.crafted_item": {
+                  "min": 1
+                }
+              }
+            }
+          }
+        ],
+        "recipe": "grappling_hooks:grappling_hook"
+      }
+    },
+    "battle_hook": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "gh.crafted_item": {
+                  "min": 1
+                }
+              }
+            }
+          }
+        ],
+        "recipe": "grappling_hooks:battle_hook"
+      }
     }
   },
   "requirements": [
     [
-      "impossible"
+      "grappling_hook",
+      "battle_hook"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "grappling_hooks:entity/player/nbt_recipe/take_recipe"
+  }
 }

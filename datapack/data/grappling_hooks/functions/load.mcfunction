@@ -3,6 +3,7 @@ scoreboard objectives add gh.wfstick minecraft.used:minecraft.warped_fungus_on_a
 scoreboard objectives add gh.delay dummy
 scoreboard objectives add gh.bdelay dummy
 scoreboard objectives add gh.player_id dummy
+scoreboard objectives add gh.crafted_item minecraft.crafted:minecraft.knowledge_book
 
 scoreboard players set $cons.rng_a gh.dummy 1103515245
 execute store result score $cons.rng_seed gh.dummy run data get entity @e[limit=1,sort=random] UUID[0]
